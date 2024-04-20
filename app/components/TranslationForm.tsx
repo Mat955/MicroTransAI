@@ -25,7 +25,7 @@ function TranslationForm({ languages }: { languages: TranslationLanguage }) {
               <SelectLabel>Want us to figure out?</SelectLabel>
 
               <SelectItem key="auto" value="auto">
-                Auto Detect
+                Auto Detects
               </SelectItem>
             </SelectGroup>
             <SelectGroup>
