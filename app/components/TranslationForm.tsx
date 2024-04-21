@@ -29,7 +29,7 @@ function TranslationForm({ languages }: { languages: TranslationLanguage }) {
               </SelectItem>
             </SelectGroup>
             <SelectGroup>
-              <SelectLabel>Language</SelectLabel>
+              <SelectLabel>Languages</SelectLabel>
               {Object.entries(languages.translation).map(([key, value]) => (
                 <SelectItem key={key} value={key}>
                   {value.name}
