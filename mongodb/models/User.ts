@@ -28,3 +28,44 @@ const userSchema = new Schema<IUser>({
 });
 
 const User = mongoose.models.User || mongoose.model<IUser>("User", userSchema);
+
+export async function addOrUpdateUser(
+  userId: string,
+  translation: {
+    fromText: string;
+    from: string;
+    to: string;
+    toText: string;
+  }
+): Promise<IUser> {
+  const filter = { userId };
+  const update = {
+    $set: {
+      userId,
+    },
+    $push: {
+      translations: translation,
+    },
+  };
+
+  const options = { upsert: true, new: true, setDefaultsOnInsert: true };
+
+  await connectDB();
+
+  try {
+    const user: IUser | null = await User.findOneAndUpdate(
+      filter,
+      update,
+      options
+    );
+
+    if (!user) {
+      throw new Error("User not found");
+    }
+
+    return user;
+  } catch (error) {
+    console.error("Error adding or updating user", error);
+    throw error;
+  }
+}
