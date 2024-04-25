@@ -25,7 +25,7 @@ function Header() {
           <UserButton />
         </div>
       ) : (
-        <SignInButton afterSignInUrl="/translate" mode="modal" />
+        <SignInButton fallbackRedirectUrl="/translate" mode="modal" />
       )}
     </header>
   );
