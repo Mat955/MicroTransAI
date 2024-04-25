@@ -69,3 +69,28 @@ export async function addOrUpdateUser(
     throw error;
   }
 }
+
+export async function getTranslations(
+  userId: string
+): Promise<Array<ITranslation>> {
+  await connectDB();
+
+  try {
+    const user: IUser | null = await User.findOne({ userId });
+
+    if (user) {
+      user.translations.sort(
+        (a: ITranslation, b: ITranslation) =>
+          b.timestamp.getTime() - a.timestamp.getTime()
+      );
+
+      return user.translations;
+    } else {
+      console.log("User not found", userId);
+      return [];
+    }
+  } catch (error) {
+    console.error("Error getting translations", error);
+    throw error;
+  }
+}
