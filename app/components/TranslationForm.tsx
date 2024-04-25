@@ -1,5 +1,6 @@
 "use client";
 
+import translate from "@/actions/translate";
 import {
   Select,
   SelectContent,
@@ -11,7 +12,7 @@ import {
 } from "./ui/select";
 import { TranslationLanguage } from "../translate/page";
 import { Textarea } from "@/components/ui/textarea";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useFormState } from "react-dom";
 
 const initialState = {
@@ -27,6 +28,10 @@ function TranslationForm({ languages }: { languages: TranslationLanguage }) {
   const [state, formAction] = useFormState(translate, initialState);
   const [input, setInput] = useState("");
   const [output, setOutput] = useState("");
+
+  useEffect(() => {
+    if (state.output) setOutput(state.output);
+  }, [state]);
 
   return (
     <div>
