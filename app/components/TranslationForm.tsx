@@ -16,6 +16,7 @@ import { useEffect, useRef, useState } from "react";
 import { useFormState } from "react-dom";
 import Image from "next/image";
 import translateIcon from "../assets/images/translate-icon.png";
+import SubmitButton from "./SubmitButton";
 
 const initialState = {
   inputLanguage: "auto",
@@ -131,10 +132,9 @@ function TranslationForm({ languages }: { languages: TranslationLanguage }) {
             />
           </div>
         </div>
-        <div>
-          <button type="submit" ref={submitBtnRef}>
-            Submit
-          </button>
+        <div className="mt-5 flex justify-end">
+          <SubmitButton disabled={!input} />
+          <button type="submit" ref={submitBtnRef} hidden />
         </div>
       </form>
     </div>
