@@ -10,12 +10,12 @@ import {
   SelectTrigger,
   SelectValue,
 } from "./ui/select";
-import { TranslationLanguage } from "../translate/page";
+import { TranslationLanguage } from "../app/translate/page";
 import { Textarea } from "@/components/ui/textarea";
 import { useEffect, useRef, useState } from "react";
 import { useFormState } from "react-dom";
 import Image from "next/image";
-import translateIcon from "../assets/images/translate-icon.png";
+import translateIcon from "@/app/assets/images/translate-icon.png";
 import SubmitButton from "./SubmitButton";
 import { Button } from "@/components/ui/button";
 import { Volume2Icon } from "lucide-react";

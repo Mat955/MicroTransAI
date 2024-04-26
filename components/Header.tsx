@@ -1,7 +1,7 @@
 import { auth } from "@clerk/nextjs/server";
 import Image from "next/image";
 import Link from "next/link";
-import logo from "../assets/images/translate-logo.png";
+import logo from "../app/assets/images/translate-logo.png";
 import { SignInButton, UserButton } from "@clerk/nextjs";
 
 function Header() {

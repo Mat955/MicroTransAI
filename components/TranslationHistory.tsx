@@ -49,7 +49,7 @@ async function TranslationHistory() {
 
               <div className="space-y-2 pr-5">
                 <p>{translation.fromText}</p>
-                <p className="text-gray-400">{translations.toText}</p>
+                <p className="text-gray-400">{translation.toText}</p>
               </div>
             </div>
 

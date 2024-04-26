@@ -1,6 +1,6 @@
 import { auth } from "@clerk/nextjs/server";
-import TranslationForm from "../components/TranslationForm";
-import TranslationHistory from "../components/TranslationHistory";
+import TranslationForm from "../../components/TranslationForm";
+import TranslationHistory from "../../components/TranslationHistory";
 
 export type TranslationLanguage = {
   translation: {

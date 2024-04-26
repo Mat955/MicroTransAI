@@ -13,17 +13,16 @@ export async function POST(request: NextRequest) {
     process.env.AZURE_DEPLOYMENT_NAME === undefined
   ) {
     console.error("Missing Azure API key or endpoint");
-    return {
-      sender: "",
+
+    return NextResponse.json({
       response: "Missing Azure API key or endpoint",
-    };
+    });
   }
 
   if (file.size === 0) {
-    return {
-      sender: "",
+    return NextResponse.json({
       response: "No audio file uploaded",
-    };
+    });
   }
 
   const arrayBuffer = await file.arrayBuffer();
