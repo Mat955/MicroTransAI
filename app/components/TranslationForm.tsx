@@ -81,7 +81,7 @@ function TranslationForm({ languages }: { languages: TranslationLanguage }) {
     <div>
       <form action={formAction}>
         <div className="flex space-x-2">
-          <div className="flex items-center group cursor-pointer border rounded-md w-fit px-3 py-2 bg-[#E7F0FE] mb-5">
+          <div className="flex items-center group cursor-pointer border rounded-md w-fit px-3 py-2 hover:bg-[#E7F0FE] mb-5">
             <Image
               src={translateIcon}
               alt="Translate Icon"
@@ -92,10 +92,8 @@ function TranslationForm({ languages }: { languages: TranslationLanguage }) {
               Text
             </p>
           </div>
+          <Recorder uploadAudio={uploadAudio} />
         </div>
-
-        <Recorder uploadAudio={uploadAudio} />
-
         <div className="flex flex-col space-y-2 lg:flex-row lg:space-y-0 lg:space-x-2">
           <div className="flex-1 sapce-y-2">
             <Select name="inputLanguage" defaultValue="auto">
