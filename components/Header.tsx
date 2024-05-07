@@ -19,7 +19,7 @@ function Header() {
         <Link href="/">
           <Image
             src={logo}
-            alt="logo"
+            alt="logo of the app"
             width={200}
             height={100}
             className="object-contain h-32 cursor-pointer"
