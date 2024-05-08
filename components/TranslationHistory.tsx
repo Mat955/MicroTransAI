@@ -18,7 +18,6 @@ async function TranslationHistory() {
   // }/translationHistory?userId=${userId}`;
 
   const url = `https://micro-trans-ai.vercel.app/translationHistory?userId=${userId}`;
-  console.log(url);
 
   const response = await fetch(url, {
     next: {
@@ -33,15 +32,17 @@ async function TranslationHistory() {
     <div>
       <h1 className="text-3xl my-5">History</h1>
 
+      {/* Show a message if there are no translations */}
       {translations.length === 0 && (
-        <p className="mb-5 text-gray-400">No translations yet.</p>
+        <p className="mb-5 text-gray-400">No translations yet</p>
       )}
 
+      {/* Show a list of translations */}
       <ul className="divide-y border rounded-md">
         {translations.map((translation) => (
           <li
             key={translation._id}
-            className="flex justify-between items-center p-5 hover:bg-[#E7F0FE] relative"
+            className="flex justify-between items-center p-5 hover:bg-gray-50 relative"
           >
             <div>
               <p className="text-sm mb-5 text-gray-500">
@@ -56,7 +57,7 @@ async function TranslationHistory() {
               </div>
             </div>
 
-            <p className="absolute top-2 right-2 text-gray-300 text-sm">
+            <p className="text-sm text-gray-300 absolute top-2 right-2">
               <TimeAgoText
                 date={new Date(translation.timestamp).toISOString()}
               />
