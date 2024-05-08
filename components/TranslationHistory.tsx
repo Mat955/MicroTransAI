@@ -11,11 +11,13 @@ const getLanguage = (code: string) => {
 async function TranslationHistory() {
   const { userId } = auth();
 
-  const url = `${
-    process.env.NODE_ENV === "development"
-      ? "http://localhost:3000"
-      : process.env.VERCEL_URL
-  }/translationHistory?userId=${userId}`;
+  // const url = `${
+  //   process.env.NODE_ENV === "development"
+  //     ? "http://localhost:3000"
+  //     : process.env.VERCEL_URL
+  // }/translationHistory?userId=${userId}`;
+
+  const url = `https://micro-trans-ai.vercel.app/translationHistory?userId=${userId}`;
 
   const response = await fetch(url, {
     next: {
