@@ -1,7 +1,13 @@
-## Website:
-
-https://micro-trans-ai.vercel.app
-Login with your Google Account or test data: test@ematpro.dev : Test135d
+<p align="center">
+    <h1 align="center">WEBSITE</h1>
+</p>
+<p align="center">
+    <h1 align="center"><a href="https://micro-trans-ai.vercel.app">Micro Trans AI></a></h1>
+</p>
+<p align="center">
+    <em>Login with your Google Account or
+   test data: test@ematpro.dev : Test135d</em>
+</p>
 
 <p align="center">
   <img src="MicroTransAI.png" width="60%" alt="project-logo">
@@ -27,18 +33,18 @@ Login with your Google Account or test data: test@ematpro.dev : Test135d
 <details>
   <summary>Table of Contents</summary><br>
 
-- [ Overview](#-overview)
-- [ Features](#-features)
-- [ Repository Structure](#-repository-structure)
-- [ Modules](#-modules)
-- [ Getting Started](#-getting-started)
-  - [ Installation](#-installation)
-  - [ Usage](#-usage)
-  - [ Tests](#-tests)
-- [ Project Roadmap](#-project-roadmap)
-- [ Contributing](#-contributing)
-- [ License](#-license)
-- [ Acknowledgments](#-acknowledgments)
+- [ Overview](#overview)
+- [ Features](#features)
+- [ Repository Structure](#repository-structure)
+- [ Modules](#modules)
+- [ Getting Started](#getting-started)
+  - [ Installation](#installation)
+  - [ Usage](#usage)
+  - [ Tests](#tests)
+- [ Project Roadmap](#project-roadmap)
+- [ Contributing](#contributing)
+- [ License](#license)
+- [ Acknowledgments](#acknowledgments)
 </details>
 <hr>
 
@@ -229,8 +235,6 @@ MicroTransAI is an innovative software project designed around the Next.js frame
 
 **System Requirements:**
 
-- **TypeScript**: `version x.y.z`
-
 ### Installation
 
 <h4>From <code>source</code></h4>
@@ -270,14 +274,6 @@ MicroTransAI is an innovative software project designed around the Next.js frame
 > ```console
 > $ npm test
 > ```
-
----
-
-## Project Roadmap
-
-- [x] `► INSERT-TASK-1`
-- [ ] `► INSERT-TASK-2`
-- [ ] `► ...`
 
 ---
 
@@ -326,16 +322,6 @@ Contributions are welcome! Here are several ways you can contribute:
 
 ---
 
-## License
-
-This project is protected under the [SELECT-A-LICENSE](https://choosealicense.com/licenses) License. For more details, refer to the [LICENSE](https://choosealicense.com/licenses/) file.
-
----
-
-## Acknowledgments
-
-- List any resources, contributors, inspiration, etc. here.
-
-[**Return**](#-overview)
+[**Return Top**](#overview)
 
 ---
