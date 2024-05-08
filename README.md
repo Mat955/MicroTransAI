@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-  <img src="MicroTransAI.png" width="60%" alt="project-logo">
+  <img src="./app/assets/images/MicroTransAI.png" width="60%" alt="project-logo">
 </p>
 <p align="center">
     <h1 align="center">MICROTRANSAI</h1>

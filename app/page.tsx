@@ -3,7 +3,7 @@ import { SignInButton } from "@clerk/nextjs";
 import { auth } from "@clerk/nextjs/server";
 import Image from "next/image";
 import Link from "next/link";
-import robotsImg from "./assets/images/chat-robots.jpg";
+import robotsImg from "./assets/images/MicroTransAI.png";
 
 export default async function Home() {
   const { userId } = auth();
