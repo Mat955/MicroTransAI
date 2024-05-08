@@ -18,6 +18,7 @@ async function TranslationHistory() {
   // }/translationHistory?userId=${userId}`;
 
   const url = `https://micro-trans-ai.vercel.app/translationHistory?userId=${userId}`;
+  console.log(url);
 
   const response = await fetch(url, {
     next: {
@@ -40,7 +41,7 @@ async function TranslationHistory() {
         {translations.map((translation) => (
           <li
             key={translation._id}
-            className="flex justify-between items-center p-5 hover:bg-[#020617] relative"
+            className="flex justify-between items-center p-5 hover:bg-[#E7F0FE] relative"
           >
             <div>
               <p className="text-sm mb-5 text-gray-500">
