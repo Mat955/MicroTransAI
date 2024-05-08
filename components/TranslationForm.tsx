@@ -10,7 +10,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "./ui/select";
-import { TranslationLanguage } from "../app/translate/page";
+import { TranslationLanguages } from "../app/translate/page";
 import { Textarea } from "@/components/ui/textarea";
 import { useEffect, useRef, useState } from "react";
 import { useFormState } from "react-dom";
